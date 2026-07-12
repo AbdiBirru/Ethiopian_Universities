@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <script>
+        (function () {
+          try {
+            if (localStorage.getItem("theme") === "dark") {
+              document.documentElement.setAttribute("data-theme", "dark");
+            }
+          } catch (e) {}
+        })();
+      </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="style.css" rel="stylesheet" />
+      <meta name="description" content="Ethiopian Universities: an overview of the country's higher-education system, how universities are classified, and a full directory of institutions." />
+      <title>Ethiopian Universities — Home</title>
+    </head>
+    <body>
+
+      <header>
+        <nav aria-label="Main navigation">
+          <a class="logo-link" href="index.html"><img src="images/logo.png" class="logo-img" alt="Ethiopian Universities logo" /></a>
+
+          <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul id="primary-menu">
+            <li><a class="menu" href="index.html" aria-current="page">Home</a></li>
+            <li><a class="menu" href="classification.html">Classification</a></li>
+            <li><a class="menu" href="universities.html">Universities</a></li>
+            <li><button id="darkModeToggle" class="dark-toggle" type="button" aria-pressed="false">🌙 Dark Mode</button></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="page-content">
+        <h1>Ethiopian Universities</h1>
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>Ethiopian universities are important institutions that help students gain higher education and professional training after high school. Over the past decades, the number of universities in Ethiopia has increased significantly, with many new institutions established across different regions. This growth supports the country’s development by producing skilled professionals such as doctors, engineers, teachers, and researchers.</p>
+
+          <p>Most universities in Ethiopia are public and funded by the government, while some are private and managed by organizations or individuals. These universities offer a wide range of academic programs at undergraduate, graduate, and doctoral levels in fields like medicine, engineering, agriculture, business, social sciences, natural sciences, and technology.</p>
+
+          <p>The Ministry of Education oversees and regulates higher education institutions to ensure quality, accreditation, and standard standards. Universities are often grouped into different generations based on their year of establishment, infrastructure, and academic capacity. Despite challenges such as limited resources, high student enrollment, and insufficient research funding, Ethiopian universities continue to grow and play a key role in national development and innovation.</p>
+        </section>
+
+        <section id="explore" class="quick-links">
+          <h2>Explore</h2>
+          <div class="quick-links-grid">
+            <a class="quick-link-card" href="classification.html">
+              <h3>Classification of Universities</h3>
+              <p>See how universities are grouped — both the older generational system and the new government policy of institutional differentiation.</p>
+              <span class="quick-link-cta">View classification →</span>
+            </a>
+            <a class="quick-link-card" href="universities.html">
+              <h3>All Universities</h3>
+              <p>Browse the full directory of 47 universities, plus a searchable dashboard with charts by category, region, and generation.</p>
+              <span class="quick-link-cta">View universities →</span>
+            </a>
+          </div>
+        </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p class="footer-credit">Built by <strong>AbdiBuilds</strong></p>
+          <ul class="footer-socials">
+            <li><a href="https://x.com/DevAbdiBirru" target="_blank" rel="noopener noreferrer">X</a></li>
+            <li><a href="https://t.me/AbdiBuilds" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            <li><a href="https://www.linkedin.com/in/abdibirru" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/abdibirru" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://bsky.app/profile/abdibirru.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+      <script src="theme.js"></script>
+    </body>
+</html>
